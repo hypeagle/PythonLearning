@@ -8,7 +8,7 @@ text = u'东风袅袅泛崇光，香雾空蒙月转廊。.只恐夜深花睡去�
 text_arr = text.split(".")
 print text_arr
 
-font = ImageFont.truetype("simkai.ttf", 24)
+font = ImageFont.truetype("PingFang.ttc", 24)
 lines = []
 
 line_width = 0
