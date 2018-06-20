@@ -11,10 +11,10 @@ riddleList = []
 for index in range(1, sheet.nrows):
     riddle =  sheet.cell_value(index, 0)
     solution = sheet.cell_value(index, 1)
-    if len(riddle) <= 3:
-        break
+    tip = sheet.cell_value(index, 2)
     riddleItem = {}
     riddleItem["riddle"] = riddle.strip()
+    riddleItem["tip"] = tip.strip()
     riddleItem["solution"] = solution.strip()
     riddleList.append(riddleItem)
 print json.dumps(riddleList)
